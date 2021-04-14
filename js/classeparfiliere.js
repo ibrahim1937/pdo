@@ -21,9 +21,7 @@ $(document).ready( function() {
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
             remplir(data);
-            $(".datatable").DataTable({
-                "bPaginate": false,
-            });
+            $(".datatable").DataTable();
 
         },
         error: function(jqXHR, textStatus, errorThrown){
@@ -48,9 +46,7 @@ $(document).on('change', '#filiereoptions', function(){
                 $(".datatable").DataTable().destroy();
 
                 remplir(data);
-                $(".datatable").DataTable({
-                    "bPaginate": false,
-                });
+                $(".datatable").DataTable();
 
             },
             error: function(jqXHR, textStatus, errorThrown){
@@ -75,9 +71,7 @@ $(document).on('change', '#filiereoptions', function(){
 
                 $(".datatable").DataTable().destroy();
                 remplir(data);
-                $(".datatable").DataTable({
-                    "bPaginate": false,
-                });
+                $(".datatable").DataTable();
     
             },
             error: function(jqXHR, textStatus, errorThrown){
@@ -159,9 +153,7 @@ $(document).on('click', '#btn_ajax', function() {
                 $(".datatable").DataTable().destroy();
 
                 remplir(data);
-                $(".datatable").DataTable({
-                    "bPaginate": false,
-                });
+                $(".datatable").DataTable();
 
             },
             error: function(jqXHR, textStatus, errorThrown){
@@ -216,9 +208,7 @@ $(document).on('click', '.supprimerclasse', function() {
                 $(".datatable").DataTable().destroy();
 
                 remplir(data);
-                $(".datatable").DataTable({
-                    "bPaginate": false,
-                });
+                $(".datatable").DataTable();
 
             },
             error: function(jqXHR, textStatus, errorThrown){

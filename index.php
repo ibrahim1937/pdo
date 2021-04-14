@@ -26,6 +26,7 @@ if ($_SESSION["users"]) {
     <link href="style/sb-admin-2.css" rel="stylesheet">
     <link href="style/main.css" rel="stylesheet">
     <link href="style/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="style/jquery.dataTables.min.css" rel="stylesheet">
     <script src="vendor/chartjs/chart.js"></script>
 
 </head>

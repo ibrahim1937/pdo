@@ -10,10 +10,7 @@ $(document).ready( function() {
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
             remplir(data);
-            $(".datatable").DataTable({
-                "bPaginate": false,
-                "bInfo" : false,
-            });
+            $(".datatable").DataTable();
 
         },
         error: function(jqXHR, textStatus, errorThrown){
@@ -40,10 +37,7 @@ $(document).on('click', '.supprimerfiliere', function() {
 
             remplir(data);
             
-            $(".datatable").DataTable({
-                "bPaginate": false,
-                "bInfo" : false,
-            });
+            $(".datatable").DataTable();
             
 
             
@@ -94,10 +88,7 @@ $(document).on('click', '#btn_ajax', function() {
 
                 remplir(data);
             
-                $(".datatable").DataTable({
-                    "bPaginate": false,
-                    "bInfo" : false,
-                });
+                $(".datatable").DataTable();
     
             },
             error: function(jqXHR, textStatus, errorThrown){
@@ -142,10 +133,7 @@ $(document).on('click', '#btn_ajax', function() {
 
 
                 
-                    $(".datatable").DataTable({
-                        "bPaginate": false,
-                        "bInfo" : false,
-                    });
+                    $(".datatable").DataTable();
         
                 },
                 error: function(jqXHR, textStatus, errorThrown){
